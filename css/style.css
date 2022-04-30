@@ -1,0 +1,44 @@
+header{
+    background-image: url(../images/mainBg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#recipes{
+    background-image: url(../images/page-bg.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+
+ .img-container img:hover , .img-overlay img:hover{
+    transform: scale(1.1,1.1);
+}
+.img-container img , .img-overlay img{
+    transition: transform 1s ease-in-out;
+}
+
+#recipesColumns .img-container img{
+height: 25vh; 
+cursor: pointer;
+}
+
+#specificRecipeColumn img {
+    max-height: 35vh;
+}
+
+#specificRecipeColumn .card {
+    position: sticky;
+    top: 0;
+}
+#specificRecipeColumn .card ul {
+    max-height: 25vh;
+}
+.gallerItem img {
+    height: 35vh; 
+}
+.img-overlay{
+    transition: opacity 1s ease-in-out;
+}
+.img-overlay:hover{
+    opacity: .4;
+}
+
